@@ -2,22 +2,27 @@ const fs = require("fs");
 const path = require("path");
 const uuid = require("uuid");
 
-function createNewNote(body, notesArray) {
+function createNewNote(body, notes) {
     const note = body;
     note.id = uuid.v4();
-    notesArray.push(note);
+    notes.push(note);
     fs.writeFileSync(
         path.join(__dirname, '../db/db.json'),
-        JSON.stringify({ notes: notesArray }, null, 2)
+        JSON.stringify(notes, null, 2)
     );
     return note;
 };
 
-function deleteNote(id, notesArray) {
-    const newNotesArray = notesArray.filter(note => note.id !== id);
+function deleteNote(id, notes) {
+    let newNotesArray = notes;
+    newNotesArray.forEach(function (note) {
+        if (note.id === id) {
+            newNotesArray.splice(newNotesArray.indexOf(note), 1);
+        }
+    })
     fs.writeFileSync(
         path.join(__dirname, '../db/db.json'),
-        JSON.stringify({ notes: newNotesArray }, null, 2)
+        JSON.stringify(newNotesArray, null, 2)
     );
     return newNotesArray;
 };
@@ -32,8 +37,8 @@ function validateNote(note) {
     return true;
 };
 
-function findById(id, notesArray) {
-    const result = notesArray.filter(note => note.id === id)[0];
+function findById(id, notes) {
+    const result = notes.filter(note => note.id === id)[0];
     return result;
 };
 
