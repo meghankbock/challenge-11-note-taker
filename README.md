@@ -5,9 +5,9 @@ This repository contains the HTML and Javascript code for the Note Taker applica
 
 ## Screenshots
 * Screenshot #1 ![Note Taker 1](https://github.com/meghankbock/challenge-11-note-taker/blob/main/Develop/images/Note-Taker-Screenshot-1.PNG)
-* Screenshot #2 ![Note Taker 2](hhttps://github.com/meghankbock/challenge-11-note-taker/blob/main/Develop/images/Note-Taker-Screenshot-2.PNG)
-* Screenshot #3 ![Note Taker 3](hhttps://github.com/meghankbock/challenge-11-note-taker/blob/main/Develop/images/Note-Taker-Screenshot-3.PNG)
-* Screenshot #4 ![Note Taker 4](hhttps://github.com/meghankbock/challenge-11-note-taker/blob/main/Develop/images/Note-Taker-Screenshot-4.PNG)
+* Screenshot #2 ![Note Taker 2](https://github.com/meghankbock/challenge-11-note-taker/blob/main/Develop/images/Note-Taker-Screenshot-2.PNG)
+* Screenshot #3 ![Note Taker 3](https://github.com/meghankbock/challenge-11-note-taker/blob/main/Develop/images/Note-Taker-Screenshot-3.PNG)
+* Screenshot #4 ![Note Taker 4](https://github.com/meghankbock/challenge-11-note-taker/blob/main/Develop/images/Note-Taker-Screenshot-4.PNG)
 
 ## GitHub Repository URL
 * https://github.com/meghankbock/challenge-11-note-taker
