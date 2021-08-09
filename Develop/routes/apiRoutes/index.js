@@ -3,15 +3,17 @@ const router = require("express").Router();
 const {
     validateNote,
     createNewNote,
+    findById,
+    deleteNote,
 } = require("../../lib/notes");
 
-const { notes } = require("../../db/db.json");
+const { notes } = require("../../db/db");
 
-router.get("/api/notes", (req, res) => {
+router.get("/notes", (req, res) => {
     res.json(notes);
 });
 
-router.post("/api/notes", (req, res) => {
+router.post("/notes", (req, res) => {
 
     if (!validateNote(req.body)) {
         res.status(400).send("Please enter a note.");
@@ -19,6 +21,11 @@ router.post("/api/notes", (req, res) => {
         const newNote = createNewNote(req.body, notes);
         res.json(newNote);
     }
+});
+
+router.delete("/notes/:id", (req, res) => {
+    const newNotesArray = deleteNote(req.params.id, notes);
+    res.json(newNotesArray);
 });
 
 module.exports = router;
