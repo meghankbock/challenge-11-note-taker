@@ -1,7 +1,7 @@
 # challenge-11-note-taker
 
 ## Summary
-This repository contains the HTML and Javascript code for the Note Taker application. This application utilizes Node.js and Express.js to create a front- and back-end application that captures user input to create a note (including note title and note description), renders the note in the client-side web browser, and saves the note to a server-side JSON database.
+This repository contains the HTML and Javascript code for the Note Taker application. This application utilizes Node.js and Express.js to create a front- and back-end application that 1) captures user input to create notes (including title and description), 2) renders the notes in the client-side web browser, and 3) saves the notes to a server-side JSON database.
 
 ## Screenshots
 * Screenshot #1 ![Note Taker 1](https://github.com/meghankbock/challenge-11-note-taker/blob/main/Develop/images/Note-Taker-Screenshot-1.PNG)
@@ -13,7 +13,7 @@ This repository contains the HTML and Javascript code for the Note Taker applica
 * https://github.com/meghankbock/challenge-11-note-taker
 
 ## Heroku Deployed URL
-* 
+* https://guarded-retreat-82576.herokuapp.com/
 
 
 ### created by Meghan Bock
